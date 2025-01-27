@@ -209,17 +209,17 @@
                     <div class="products">
                         <div class="product" data-id="1" data-name="Товар 1" data-price="500">
                             <span>Товар 1</span>
-                            <span>500 руб.</span>
+                            <span>500 т.</span>
                             <button class="add-to-cart">Добавить в корзину</button>
                         </div>
                         <div class="product" data-id="2" data-name="Товар 2" data-price="700">
                             <span>Товар 2</span>
-                            <span>700 руб.</span>
+                            <span>700 т.</span>
                             <button class="add-to-cart">Добавить в корзину</button>
                         </div>
                         <div class="product" data-id="3" data-name="Товар 3" data-price="900">
                             <span>Товар 3</span>
-                            <span>900 руб.</span>
+                            <span>900 т.</span>
                             <button class="add-to-cart">Добавить в корзину</button>
                         </div>
                     </div>
@@ -228,7 +228,7 @@
                         Товары будут добавлены здесь динамически
                     </div>
                     <div class="cart-total">
-                        <p>Итого: <span id="total-price">0</span> руб.</p>
+                        <p>Итого: <span id="total-price">0</span> т.</p>
                         <button id="checkout">Оформить заказ</button>
                     </div>
                 </div>
@@ -332,7 +332,7 @@ button:hover {
 
             cartItemElement.innerHTML = `
                 <span>${item.name}</span>
-                <span>${item.price} руб.</span>
+                <span>${item.price} т.</span>
                 <div class="quantity-control">
                     <button class="decrease-quantity" data-id="${item.id}">-</button>
                     <input type="text" value="${item.quantity}" readonly>
@@ -443,9 +443,6 @@ button:hover {
 							<img src="img/ico-whatsapp.svg" alt="">
 						</a>
 					</div>
-				</div>
-				<div class="footer__bottom">
-					ООО “Название” ИНН: 0000000
 				</div>
 			</div>
 		</footer>
